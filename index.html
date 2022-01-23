@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-indigo darken-1 text-center mt-5">
+        <h1>Find Temperature By City</h1>
+    </div>
+    <div class="container">
+        <div class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" name="" id="city" class="form-control  " placeholder="Enter City Name">
+                <button class="btn btn-success mx-2" onclick="searchTemp()">Search</button>
+                <button class="btn btn-primary" onclick="ref()">Refresh</button>
+            </div>
+        </div>
+        <div class="text-blue darken-3 text-center">
+            <h1 id="cityN"></h1>
+            <h1 id="h1" style="display: none;"><span id="temp"></span>&deg;C</h1>
+            <h3 id="haze"></h3>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
